@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.2/immutable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="src/utils.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/q-learning.js"></script>
+    <script src="src/hamiltonian.js"></script>
+    <script src="src/shortest-path.js"></script>
+    <script src="src/sketch.js"></script>
+  </head>
+  <body>
+    <h1 class="title">AI Snake</h1>
+    <div style="display: flex; flex-wrap: wrap; justify-content: flex-start">
+      <div id="cv" style="margin-bottom: 1em"></div>
+      <div
+        id="col1"
+        style="padding-left: 1em; margin-bottom: 1em; width: 350px"
+      >
+        <h3 class="title">Game Settings</h3>
+        <div id="gameSettings">
+          <p id="gameSizeLbl">Size:</p>
+          <div id="gameSize"></div>
+          <p id="gameSpeedLbl">Speed:</p>
+          <div id="gameSpeed"></div>
+          <div id="drawWalls" style="display: flex"></div>
+          <div id="arrows"></div>
+        </div>
+        <h3 class="title">Player Selection</h3>
+        <p>
+          If selecting Human, make sure you also click on the Canvas after
+          selection, otherwise your button presses will be registered by other
+          browser elements.
+        </p>
+        <div id="playerSelect"></div>
+        <p>
+          <span id="scoreCount">Score: </span>,
+          <span id="gameCount">Game Count: </span>
+        </p>
+        <p>
+          <span id="scoreMean">Mean: </span>,
+          <span id="scoreMedian">Median: </span>,
+          <span id="scoreMin">Min: </span>,
+          <span id="scoreMax">Max: </span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
